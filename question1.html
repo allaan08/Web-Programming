@@ -1,0 +1,51 @@
+<html>
+	<head>
+	<title>Question 2 </title>
+	<style type="text/css">
+	</style>
+
+	<script type="text/javascript">
+
+	function encrypt ()
+	{
+		var itemcount;
+		var i;
+		var sum=0;
+		var cal;
+		itemcount = prompt("How many item/items Salesman sale last week:");
+		var count = parseInt(itemcount);
+		for(i=0;i<count;i++)
+	{
+		cal = prompt("Enter item number:");
+		var getprice = parseInt(cal);
+		if(getprice == 1)
+		{
+		sum = sum + 239.99;
+		}
+		else if(getprice == 2)
+		{
+		sum = sum + 129.75;
+		}
+		else if(getprice == 3)
+		{
+		sum = sum + 99.95;
+		}
+		else if(getprice == 4)
+		{
+		sum = sum + 350.89;
+		}
+		
+	}
+	var sal= 200 + (( 9 / 100)* parseInt(sum));
+	document.write( "<h1> Total Salary for this salesperson is: " + sal + "</h1>" );
+	}
+
+	</script>
+	</head>
+
+
+	<body>
+		<input type="button" value="Encrypt" onclick="encrypt()">
+	</body>
+
+</html>
